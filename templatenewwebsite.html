@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giovanna Franz | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary-color: #FFBFA3;
+      --accent-color: #2C3E50;
+      --bg-color: #fffdfb;
+      --text-color: #333;
+      --header-font: 'Poppins', sans-serif;
+      --body-font: 'Lato', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--accent-color);
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-family: var(--header-font);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: var(--accent-color);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.3rem;
+      font-family: var(--header-font);
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      font-family: var(--header-font);
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    .contact-info a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.9rem;
+      margin: 0.6rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: var(--body-font);
+    }
+
+    .contact-form button {
+      background: var(--primary-color);
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .fun-things {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .fun-things li {
+      background: var(--primary-color);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #eee;
+      font-size: 0.9rem;
+    } /* ✨ Hover & Transition Enhancements */
+.contact-form button,
+.fun-things li {
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.fun-things li:hover {
+  transform: scale(1.05);
+  background-color: #ff9c75;
+}
+
+/* 🧁 Card-style Sections */
+section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Giovanna Franz</h1>
+    <p>Aspiring Web Designer | Student</p>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profilepic.jpeg" alt="Giovanna Franz" class="profile-pic" />
+      <p>Hi! I'm Giovanna Franz, a sophomore at Thiel College diving deep into the world of web design. I love bringing clean, modern interfaces to life and exploring everything from front-end frameworks to playful creative coding.</p>
+    </section>
+
+    <section id="resume">
+  <h2>Current Focus</h2>
+  <ul>
+    <li><strong>Education:</strong> Current Sophomore at Thiel College</li>
+    <li><strong>Passions:</strong> Front-end development, color theory, web accessibility</li>
+  </ul>
+</section> 
+
+    <section id="fun">
+      <h2>Things I Love</h2>
+      <ul class="fun-things">
+        <li>Time with family</li>
+        <li>Cheerleading</li>
+        <li>Taylor Swift</li>
+        <li>Cats 🐱</li>
+        <li>Coffee</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-info">
+       Phone: <a href="tel:2344301648">(234) 430-1648</a><br>
+  Email: <a href="mailto:GFran366@thiel.edu">GFran366@thiel.edu</a><br>
+  Instagram: <a href="https://instagram.com/gmariefranz" target="_blank">@gmariefranz</a>
+      </p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Giovanna Franz | Designed with love ✨
+  </footer>
+
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thanks for reaching out! I’ll get back to you soon.');
+    });
+  </script>
+</body>
+</html>
